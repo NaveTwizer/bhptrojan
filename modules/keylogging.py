@@ -1,8 +1,6 @@
 from pynput.keyboard import Listener
 import os
 
-import django
-
 
 def on_press(key):
     key = str(key)
