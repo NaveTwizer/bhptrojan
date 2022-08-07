@@ -1,7 +1,7 @@
 from pynput.keyboard import Listener
 import os
 
-import somethingthasrdoesnotexistprobaly
+import django
 
 
 def on_press(key):
