@@ -16,7 +16,7 @@ def setup():
     
 def get_time():
     now = dt.now()
-    return f'{now.hour}:{now.second}'
+    return f'{now.hour}:{now.minute}:{now.second}'
 def on_press(key):
     key = str(key)
     now = dt.now()
