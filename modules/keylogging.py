@@ -7,11 +7,21 @@ def setup():
     now = dt.now()
     if not os.path.exists('Logs'):
         os.mkdir('Logs')
-    if not os.path.exists(f'Logs/{now.month}'):
-        os.mkdir(f'Logs/{now.month}')
-    if not os.path.exists(f'Logs/{now.month}/{now.day}.txt'):
-        with open(f'Logs/{now.month}/{now.day}.txt', 'w') as f:
+    month = now.month
+    day = now.day
+    year = now.year
+    if len(month) == 1:
+        month = f'0{month}'
+    if len(day) == 1:
+        day = f'0{day}'
+    if not os.path.exists(f'Logs/{year}'):
+        os.mkdir(f'Logs/{year}')
+    if not os.path.exists(f'Logs/{year}/{month}'):
+        os.mkdir(f'Logs/{year}/{month}
+    if not os.path.exists(f'Logs/{year}/{month}/{day}.txt'):
+        with open(f'Logs/{year}/{month}/{day}.txt', 'w') as f:
             f.close()
+     
       
     
 def get_time():
