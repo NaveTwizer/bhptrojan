@@ -17,7 +17,7 @@ def setup():
     if not os.path.exists(f'Logs/{year}'):
         os.mkdir(f'Logs/{year}')
     if not os.path.exists(f'Logs/{year}/{month}'):
-        os.mkdir(f'Logs/{year}/{month}
+        os.mkdir(f'Logs/{year}/{month}')
     if not os.path.exists(f'Logs/{year}/{month}/{day}.txt'):
         with open(f'Logs/{year}/{month}/{day}.txt', 'w') as f:
             f.close()
