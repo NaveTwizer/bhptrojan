@@ -7,9 +7,9 @@ def setup():
     now = dt.now()
     if not os.path.exists('Logs'):
         os.mkdir('Logs')
-    month = now.month
-    day = now.day
-    year = now.year
+    month = str(now.month)
+    day = str(now.day)
+    year = str(now.year)
     if len(month) == 1:
         month = f'0{month}'
     if len(day) == 1:
